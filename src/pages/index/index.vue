@@ -3,12 +3,18 @@
     <span class="msg">
       hello world
     </span>
-    <van-button type="primary">按钮</van-button>
+    <van-button @click="jump" type="primary">按钮</van-button>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    jump() {
+      this.$router.replace('/pages/index/main')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
