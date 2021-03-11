@@ -3,6 +3,7 @@
     <span class="msg">
       hello world
     </span>
+    <van-button type="primary">按钮</van-button>
   </div>
 </template>
 
