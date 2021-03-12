@@ -1,14 +1,21 @@
 <template>
-  <div>
-
+  <div class="home">
+    <SearchBar
+      disabled
+      @onClick="onSearchBarClick"
+    />
   </div>
 </template>
 
 <script>
-import { post } from '@/utils/request'
+import SearchBar from '../../components/home/SearchBar'
 
 export default {
+  components: {SearchBar},
   methods: {
+    onSearchBarClick() {
+      //  跳转到搜索页
+    }
   }
 }
 </script>
