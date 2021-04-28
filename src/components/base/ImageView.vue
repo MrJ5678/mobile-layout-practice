@@ -64,12 +64,10 @@ export default {
     onLoad() {
       this.isLoading = false
       this.error = false
-      console.log('onLoad')
     },
     onError() {
       this.error = true
       this.isLoading = true
-      console.log('onError')
     }
   }
 }
